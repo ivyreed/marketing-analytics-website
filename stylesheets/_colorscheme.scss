@@ -1,0 +1,9 @@
+$primary: rgb(139, 139, 226);
+$secondary: rgb(10,10,10);
+$accent:rgb(246, 248, 214);
+$textcolor1:rgb(10, 10, 10);
+$textcolor2:rgb(246, 248, 214);
+
+html{
+    background-image: linear-gradient( $primary 10%, $secondary);
+}

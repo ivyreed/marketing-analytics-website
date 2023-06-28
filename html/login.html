@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="/project2/marketing-analytics-website/stylesheets/styles.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap"
+      rel="stylesheet"
+    />
     <title>Login</title>
-</head>
-<body>
-    <header>
-        <h1>Best darn website</h1>   
-    </header>
-    <main>
-        <label for="username">username</label>
-        <input id='username' type="text">
-        <label for="password">password</label>
-        <input type="text">
-        <button>Log In</button>
-    </main>
-    <aside>
-        <label for="username">username</label>
-        <input id='username' type="text">
-        <label for="password">password</label>
-        <input type="text">
-        <button>Sign Up</button>
-    </aside>
-    <footer>
-        <a href="">github repo link</a>
-        <a href="">everyone's github link</a>
-    </footer>
+  </head>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header>
+          <section>
+            <div>
+              <h1>Marketing<span>Assistant</span></h1>
+            </div>
+            <ul>
+              <a href=""><li>Login</li></a>
+              <a href=""><li>Home</li></a>
+              <a href=""><li>About</li></a>
+            </ul>
+            <!-- <button>login</button> -->
+          </section>
+        </header>
 
-</body>
+        <main class="login">
+          <section>
+            <h2>Log in here!</h2>
+            <label for="username">username</label>
+            <input id="username" type="text" />
+            <label for="password">password</label>
+            <input type="text" />
+            <button>Log In</button>
+          </section>
+
+          <aside>
+            <h2>Sign up here!</h2>
+            <label for="username">username</label>
+            <input id="username" type="text" />
+            <label for="password">password</label>
+            <input type="text" />
+            <button>Sign Up</button>
+          </aside>
+        </main>
+      </div>
+      <footer>
+        <div class="foot-container">
+          <row class="foot-row">
+            <div class="foot-columns">
+              <a target="_blank" href="https://github.com/ivyreed/KKIJ-Travels"
+                ><img src="../assets/github-mark-white.png" alt=""
+              /></a>
+            </div>
+            <div class="foot-columns">
+              <ul>
+                <li>ivy</li>
+                <li>katrina</li>
+                <li>jon</li>
+                <li>houston</li>
+              </ul>
+            </div>
+          </row>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>

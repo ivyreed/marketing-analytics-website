@@ -1,9 +1,9 @@
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 header {
@@ -12,6 +12,7 @@ header {
   height: 80px;
   display: block;
   color: rgb(10, 10, 10);
+  border-bottom: 1px solid black;
 }
 header section {
   width: 80%;
@@ -55,11 +56,11 @@ header section ul a li:hover {
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 footer {
@@ -106,11 +107,11 @@ footer .foot-container .foot-row .foot-columns ul li:hover {
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 .homeContainer {
@@ -240,11 +241,11 @@ html {
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 html {
-  background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
 }
 
 .login section {

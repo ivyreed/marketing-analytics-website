@@ -1,20 +1,26 @@
 [
   {
-    "firstName": "Tony",
-    "lastName": "Stark",
+    "firstName": "Jonathan",
+    "lastName": "Strickland",
     "email": "ironman@example.com",
     "password": "password1234"
   },
   {
-    "firstName": "Steve",
-    "lastName": "Rogers",
+    "firstName": "Houston",
+    "lastName": "Culper",
     "email": "captainamerica@example.com",
     "password": "password1234"
   },
   {
-    "firstName": "Carol",
-    "lastName": "Danvers",
+    "firstName": "Katrina",
+    "lastName": "Gucilatar",
     "email": "captainmarvel@example.com",
+    "password": "password1234"
+  },
+    {
+    "firstName": "Ivy",
+    "lastName": "Reed",
+    "email": "pizza@example.com",
     "password": "password1234"
   }
 ]

@@ -5,14 +5,15 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
-const sequelize = require('../config/connection');
+const sequelize = require('../db/config');
+// const User = require('./User')
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Video extends Model {}
+class Video extends Model { }
 
 // set up fields and rules for Product model
 Video.init(
-// define columns
+  // define columns
   {
     id: {
       type: DataTypes.INTEGER,
@@ -20,11 +21,11 @@ Video.init(
       primaryKey: true,
       autoIncrement: true
     },
-    username: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.UUID,
       references: {
-        model: 'User',
-        key: 'name',
+        model: 'user',
+        key: 'id',
         unique: false
       }
     },

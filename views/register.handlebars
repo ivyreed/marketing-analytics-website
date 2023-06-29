@@ -1,12 +1,27 @@
+<head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
+</head>
+
 <div class="container">
+    <div id='page-container'>
+    <div id='content-wrap'>
   <div class="row">
     <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-      <form id="registration-form"
-        class="registration-form shadow p-4 my-5 mx-auto bg-body rounded w-75 requires-validation" novalidate>
+
+      <main 
+        id="registration-form"
+        class="login registration-form shadow p-4 my-5 mx-auto bg-body rounded w-75 requires-validation" novalidate>
+
         <div class="d-flex justify-content-center">
-          <img src="images/logo.png" />
+          {{!-- <img src="images/logo.png" /> --}}
         </div>
-        <h2 class="text-center">Register</h2>
+
+
+        <h2 class="center text-center">Sign Up</h2>
+
+        <section>
         <div>
           <label for="firstName" class="col-form-label">First Name</label>
           <div class="input-group has-validation">
@@ -36,8 +51,33 @@
           </div>
         </div>
         <button type="submit" class="btn btn-primary btn-lg w-100 mt-4 p-3">Submit</button>
-        <p class="text-center mt-3 mb-0">Already have an account? <a href="/login">Login here</a></p>
-      </form>
+        <p class="text-center mt-3 mb-0">Already have an account? <a class='wordbig' href="/login">Login here</a></p>
+        </section>
+      </main>
+              </div>
+        <footer>
+          <div class='foot-container'>
+            <row class='foot-row'>
+              <div class='foot-columns'>
+                <a
+                  target='_blank'
+                  href='https://github.com/ivyreed/KKIJ-Travels'
+                ><img src='../assets/github-mark-white.png' alt='' /></a>
+              </div>
+              <div class='foot-columns'>
+                <ul>
+                  <li>ivy</li>
+                  <li>katrina</li>
+                  <li>jon</li>
+                  <li>houston</li>
+                </ul>
+              </div>
+            </row>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
     </div>
   </div>
 </div>

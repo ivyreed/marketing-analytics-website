@@ -1,17 +1,3 @@
-/* body {
-  background-color: #eeeeee;
-}
-
-.logo-sm {
-  width: 50px;
-  height: 50px;
-}
-
-.nav-btn {
-  background: none !important;
-  border: none;
-  cursor: pointer;
-} */
 html {
   background-image: linear-gradient(rgb(139, 139, 226) 10%, rgb(10, 10, 10));
 }
@@ -386,6 +372,7 @@ html {
   list-style: none;
   text-decoration: none;
   font-family: "montserrat";
+  font-size: 70px;
 }
 
 main {

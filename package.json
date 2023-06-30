@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "seed": "node seeds/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -18,5 +19,10 @@
     "mysql2": "^3.4.2",
     "sass": "^1.63.6",
     "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.43.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8"
   }
 }

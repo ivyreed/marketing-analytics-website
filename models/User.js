@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, UUIDV4 } = require('sequelize');
 const bcrypt = require('bcrypt');
 const sequelize = require('../db/config');
 
@@ -13,7 +13,7 @@ User.init(
   {
     id: {
       type: DataTypes.UUID,
-      defaultValue: DataTypes.UUIDV4,
+      defaultValue: UUIDV4,
       allowNull: false,
       primaryKey: true,
     },
@@ -59,6 +59,7 @@ User.init(
     sequelize,
     underscored: true,
     modelName: 'User',
+    freezeTableName: true,
   }
 );
 

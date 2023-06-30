@@ -1,6 +1,6 @@
 const { Model, DataTypes } = require('sequelize');
 
-const sequelize = require('../config/connection');
+const sequelize = require('../db/config');
 
 class PrevSearch extends Model {}
 
@@ -14,9 +14,9 @@ PrevSearch.init(
       autoIncrement: true
     },
     user_id: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.UUID,
       references: {
-        model: 'user',
+        model: 'User',
         key: 'id',
         unique: false
       }
@@ -24,7 +24,7 @@ PrevSearch.init(
     search_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'search',
+        model: 'Search',
         key: 'id',
         unique: false
       }
@@ -35,7 +35,7 @@ PrevSearch.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'prev_search',
+    modelName: 'PrevSearch',
   }
 );
 

@@ -3,24 +3,27 @@
 @import './index';
 @import './login';
 
-
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'montserrat';
-    
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'montserrat';
 }
 
-main{
-    color: $textcolor2;
+main {
+  color: $textcolor2;
 }
 
 #page-container {
-    position: relative;
-    min-height: 90vh;
-  }
-  
-  #content-wrap {
-    padding-bottom: 2.5rem;}
+  position: relative;
+  min-height: 90vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.dashboard {
+  color: $accent;
+}

@@ -5,7 +5,7 @@
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
-const sequelize = require('../config/connection');
+const sequelize = require('../db/config');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Video extends Model {}
@@ -20,11 +20,11 @@ Video.init(
       primaryKey: true,
       autoIncrement: true
     },
-    username: {
-      type: DataTypes.STRING,
+    user_id: {
+      type: DataTypes.UUID,
       references: {
         model: 'User',
-        key: 'name',
+        key: 'id',
         unique: false
       }
     },

@@ -12,32 +12,32 @@ class Video extends Model {}
 
 // set up fields and rules for Product model
 Video.init(
-// define columns
+  // define columns
   {
     id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     user_id: {
       type: DataTypes.UUID,
       references: {
         model: 'User',
         key: 'id',
-        unique: false
-      }
+        unique: false,
+      },
     },
     length: {
       type: DataTypes.DECIMAL(10, 2),
       allowNull: false,
-      isDecimal: true
+      isDecimal: true,
     },
     create_date: {
       type: DataTypes.DATE,
       allowNull: false,
-      isNumeric: true
-    }
+      isNumeric: true,
+    },
   },
   {
     sequelize,

@@ -16,5 +16,11 @@
     "lastName": "Danvers",
     "email": "captainmarvel@example.com",
     "password": "password1234"
+  },
+  {
+    "firstName": "Carol",
+    "lastName": "Danvers",
+    "email": "yeet@yeet.com",
+    "password": "88888888"
   }
 ]

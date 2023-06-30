@@ -3,33 +3,30 @@ const Search = require('./Search');
 const PrevSearch = require('./PrevSearch');
 const Video = require('./Video');
 
-User.hasMany(Video,{
-  foreignKey:"user_id",
-  onDelete: "CASCADE"
-})
-Video.belongsTo(User,{
-  foreignKey:"user_id"
-})
-
+User.hasMany(Video, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+Video.belongsTo(User, {
+  foreignKey: 'user_id',
+});
 
 User.hasMany(Search, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
 });
 Search.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-
 User.hasMany(Search, {
   foreignKey: 'user_id',
-  onDelete: 'CASCADE'
+  onDelete: 'CASCADE',
 });
 Search.belongsToMany(User, {
   through: PrevSearch,
-  foreignKey: 'user_id'
+  foreignKey: 'user_id',
 });
-
 
 Search.hasMany(User, {
   foreignKey: 'user_id',
@@ -39,8 +36,6 @@ User.belongsToMany(Search, {
   through: PrevSearch,
   foreignKey: 'user_id',
 });
-
-
 
 module.exports = {
   User,

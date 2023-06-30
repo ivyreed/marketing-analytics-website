@@ -1,5 +1,5 @@
 const sequelize = require('../db/config');
-const { User, Video, Search } = require('../models');
+const { User, Project, Search } = require('../models');
 
 const userData = require('./userData.json');
 const videoData = require('./videoData.json');
@@ -14,7 +14,7 @@ const seedDatabase = async () => {
   });
 
   for (const video of videoData) {
-    await Video.create({
+    await Project.create({
       ...video,
       user_id: users[Math.floor(Math.random() * users.length)].id,
     });

@@ -1,17 +1,13 @@
-// create_date
-// username
-// video_id
-// video_length
 // import important parts of sequelize library
 const { Model, DataTypes } = require('sequelize');
 // import our database connection from config.js
 const sequelize = require('../db/config');
 
 // Initialize Product model (table) by extending off Sequelize's Model class
-class Video extends Model {}
+class Project extends Model {}
 
 // set up fields and rules for Product model
-Video.init(
+Project.init(
   // define columns
   {
     id: {
@@ -28,15 +24,12 @@ Video.init(
         unique: false,
       },
     },
-    length: {
-      type: DataTypes.DECIMAL(10, 2),
+    name: {
+      type: DataTypes.STRING,
       allowNull: false,
-      isDecimal: true,
-    },
-    create_date: {
-      type: DataTypes.DATE,
-      allowNull: false,
-      isNumeric: true,
+      validate: {
+        len: [3,15],
+      }
     },
   },
   {
@@ -44,8 +37,8 @@ Video.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'video',
+    modelName: 'Project',
   }
 );
 
-module.exports = Video;
+module.exports = Project;

@@ -1,13 +1,13 @@
 const User = require('./User');
 const Search = require('./Search');
 const PrevSearch = require('./PrevSearch');
-const Video = require('./Video');
+const Project = require('./Project');
 
-User.hasMany(Video, {
+User.hasMany(Project, {
   foreignKey: 'user_id',
   onDelete: 'CASCADE',
 });
-Video.belongsTo(User, {
+Project.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
@@ -41,5 +41,5 @@ module.exports = {
   User,
   Search,
   PrevSearch,
-  Video,
+  Project,
 };

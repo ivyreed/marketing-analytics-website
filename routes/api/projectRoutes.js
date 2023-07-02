@@ -1,6 +1,42 @@
 const router = require('express').Router();
-const { Project } = require('../../models');
+const { Project, User } = require('../../models');
 const withAuth = require('../../middleware/isAuthenticated');
+
+// get all Projects from User
+router.get('/', async (req, res) => {
+  try {
+    const projectsData = await Project.findAll({
+      include: [{ model: User, attributes: ['name'] }],
+    });
+
+    const projects = projectsData.map(project => project.get({ plain: true }));
+
+    res.render('dashboard', {
+      projects,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
+// get a single Project after clicking on front end
+router.get('/:id', async (req, res) => {
+  try {
+    const projectData = await Project.findByPk(req.params.id, {
+      include: [{ model: User, attributes: ['name'] }],
+    });
+
+    const project = projectData.get({ plain: true });
+
+    res.render('dashboard', {
+      ...project,
+      logged_in: req.session.logged_in,
+    });
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 
 router.post('/', withAuth, async (req, res) => {
   try {

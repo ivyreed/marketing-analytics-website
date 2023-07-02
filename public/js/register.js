@@ -21,6 +21,7 @@ const registrationHandler = async event => {
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
+      console.log(response);
       const { message } = await response.json();
       // eslint-disable-next-line no-undef
       showAlert({

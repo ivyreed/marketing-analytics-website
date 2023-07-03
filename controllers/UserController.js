@@ -24,6 +24,7 @@ module.exports = {
     } catch (err) {
       console.error(err);
       res.status(500).json(err);
+      console.log('pleae use a real email and make sure you use a strong');
     }
   },
 

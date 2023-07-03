@@ -48,11 +48,9 @@ header section ul li a {
   display: table-cell;
   vertical-align: middle;
   color: rgb(10, 10, 10);
-  transition: font-size 0.5s;
 }
 header section ul li a:hover {
   font-weight: 800;
-  font-size: 20px;
 }
 
 html {
@@ -125,7 +123,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid rgb(228, 228, 228);
+  border: solid rgb(139, 139, 226);
   margin: 1rem;
   padding: 1rem;
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
@@ -133,16 +131,16 @@ html {
 }
 .homeContainer aside button {
   font-weight: 800;
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
   isolation: isolate;
   position: relative;
   border-color: rgb(139, 139, 226);
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(139, 139, 226);
   border-width: 0.5rem;
   display: -moz-inline-grid;
   padding: 0.5em 1.5em;
   border: 0;
-  background: rgb(228, 228, 228);
+  background: rgb(139, 139, 226);
   margin: 1em;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -154,7 +152,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(228, 228, 228));
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
   z-index: -2;
   transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
@@ -187,7 +185,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid rgb(228, 228, 228);
+  border: solid rgb(139, 139, 226);
   margin: 1rem;
   padding: 1rem;
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
@@ -196,16 +194,16 @@ html {
 }
 .homeContainer section button {
   font-weight: 800;
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
   isolation: isolate;
   position: relative;
   border-color: rgb(139, 139, 226);
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(139, 139, 226);
   border-width: 0.5rem;
   display: -moz-inline-grid;
   padding: 0.5em 1.5em;
   border: 0;
-  background: rgb(228, 228, 228);
+  background: rgb(139, 139, 226);
   margin: 1em;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -217,7 +215,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(228, 228, 228));
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
   z-index: -2;
   transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
@@ -259,7 +257,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid rgb(228, 228, 228);
+  border: solid rgb(139, 139, 226);
   margin: 1rem;
   padding: 1rem;
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
@@ -267,16 +265,16 @@ html {
 }
 .login section button {
   font-weight: 800;
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
   isolation: isolate;
   position: relative;
   border-color: rgb(139, 139, 226);
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(139, 139, 226);
   border-width: 0.5rem;
   display: -moz-inline-grid;
   padding: 0.5em 1.5em;
   border: 0;
-  background: rgb(228, 228, 228);
+  background: rgb(139, 139, 226);
   margin: 1em;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -288,7 +286,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(228, 228, 228));
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
   z-index: -2;
   transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
@@ -321,7 +319,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: solid rgb(228, 228, 228);
+  border: solid rgb(139, 139, 226);
   margin: 1rem;
   padding: 1rem;
   -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
@@ -329,16 +327,16 @@ html {
 }
 .login aside button {
   font-weight: 800;
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
   isolation: isolate;
   position: relative;
   border-color: rgb(139, 139, 226);
-  background-color: rgb(228, 228, 228);
+  background-color: rgb(139, 139, 226);
   border-width: 0.5rem;
   display: -moz-inline-grid;
   padding: 0.5em 1.5em;
   border: 0;
-  background: rgb(228, 228, 228);
+  background: rgb(139, 139, 226);
   margin: 1em;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
           clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
@@ -350,7 +348,7 @@ html {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(228, 228, 228));
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
   z-index: -2;
   transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
@@ -380,7 +378,7 @@ html {
 }
 
 .wordbig {
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
   transition: font-size 0.5s;
 }
 .wordbig:hover {
@@ -391,6 +389,283 @@ html {
 .center {
   display: flex;
   justify-content: center;
+}
+
+html {
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
+}
+
+html {
+  background-image: linear-gradient(rgb(139, 139, 226), rgb(10, 10, 10));
+}
+
+.dash section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: solid rgb(139, 139, 226);
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+}
+.dash section button {
+  font-weight: 800;
+  color: rgb(139, 139, 226);
+  isolation: isolate;
+  position: relative;
+  border-color: rgb(139, 139, 226);
+  background-color: rgb(139, 139, 226);
+  border-width: 0.5rem;
+  display: -moz-inline-grid;
+  padding: 0.5em 1.5em;
+  border: 0;
+  background: rgb(139, 139, 226);
+  margin: 1em;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
+  transition: 500ms, -webkit-clip-path;
+  transition: clip-path, 500ms;
+  transition: clip-path, 500ms, -webkit-clip-path;
+}
+.dash section button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
+  z-index: -2;
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+.dash section button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(10, 10, 10);
+  z-index: -1;
+  -webkit-clip-path: polygon(15% 5%, 95% 5%, 95% 75%, 85% 95%, 5% 95%, 5% 25%);
+          clip-path: polygon(15% 5%, 95% 5%, 95% 75%, 85% 95%, 5% 95%, 5% 25%);
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+.dash section button:hover {
+  color: rgb(10, 10, 10);
+}
+.dash section button:where(:hover, :focus)::after {
+  -webkit-clip-path: polygon(75% 10%, 85% 25%, 85% 85%, 85% 95%, 85% 95%, 85% 25%);
+          clip-path: polygon(75% 10%, 85% 25%, 85% 85%, 85% 95%, 85% 95%, 85% 25%);
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+.dash aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border: solid rgb(139, 139, 226);
+  margin: 1rem;
+  padding: 1rem;
+  -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+}
+.dash aside button {
+  font-weight: 800;
+  color: rgb(139, 139, 226);
+  isolation: isolate;
+  position: relative;
+  border-color: rgb(139, 139, 226);
+  background-color: rgb(139, 139, 226);
+  border-width: 0.5rem;
+  display: -moz-inline-grid;
+  padding: 0.5em 1.5em;
+  border: 0;
+  background: rgb(139, 139, 226);
+  margin: 1em;
+  -webkit-clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
+          clip-path: polygon(10% 0%, 100% 0%, 100% 80%, 90% 100%, 0% 100%, 0% 20%);
+  transition: 500ms, -webkit-clip-path;
+  transition: clip-path, 500ms;
+  transition: clip-path, 500ms, -webkit-clip-path;
+}
+.dash aside button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgb(139, 139, 226), rgb(139, 139, 226));
+  z-index: -2;
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+.dash aside button::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(10, 10, 10);
+  z-index: -1;
+  -webkit-clip-path: polygon(15% 5%, 95% 5%, 95% 75%, 85% 95%, 5% 95%, 5% 25%);
+          clip-path: polygon(15% 5%, 95% 5%, 95% 75%, 85% 95%, 5% 95%, 5% 25%);
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+.dash aside button:hover {
+  color: rgb(10, 10, 10);
+}
+.dash aside button:where(:hover, :focus)::after {
+  -webkit-clip-path: polygon(75% 10%, 85% 25%, 85% 85%, 85% 95%, 85% 95%, 85% 25%);
+          clip-path: polygon(75% 10%, 85% 25%, 85% 85%, 85% 95%, 85% 95%, 85% 25%);
+  transition: -webkit-clip-path 500ms;
+  transition: clip-path 500ms;
+  transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+
+.wordbig {
+  color: rgb(139, 139, 226);
+  transition: font-size 0.5s;
+}
+.wordbig:hover {
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+  display: block;
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+input:checked + .slide-container .nav label {
+  display: block;
 }
 
 * {
@@ -415,5 +690,60 @@ main {
 }
 
 .dashboard {
-  color: rgb(228, 228, 228);
+  color: rgb(139, 139, 226);
+}
+
+.a {
+  background-image: linear-gradient(white, rgb(139, 139, 226), rgb(139, 139, 226));
+  height: 600px;
+}
+
+.b {
+  background-color: rgb(93, 93, 217);
+  height: 600px;
+}
+
+.c {
+  background-color: rgb(70, 70, 226);
+  height: 600px;
+}
+
+.d {
+  background-image: linear-gradient(white, rgb(139, 139, 226), rgb(139, 139, 226));
+  height: 100vh;
+}
+
+.e {
+  font-weight: 800;
+}
+
+.stay {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.spacer {
+  height: 80px;
+}
+
+.divide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.tree {
+  background-image: url(../images/download.png);
+  scale: 1.1;
+  height: 100vh;
+  position: absolute;
+}
+
+.clear {
+  opacity: 90%;
+  height: 600px;
 }/*# sourceMappingURL=styles.css.map */

@@ -6,15 +6,15 @@
     rel='stylesheet'
   />
 </head>
-
-<div class='container'>
+<body>
+  {{! <div class='container'> }}
   <div id='page-container'>
     <div id='content-wrap'>
-      <div class='row'>
+      <div class='row d'>
         <div class='col-md-8 offset-md-2 col-lg-6 offset-lg-3'>
-          <main class='login'>
+          <main class='login '>
             <form
-              id='login-form'
+              id='login-form '
               class='login-form shadow p-4 my-5 mx-auto bg-body rounded w-75 requires-validation'
               novalidate
             >
@@ -63,28 +63,27 @@
             </form>
           </main>
         </div>
-        <footer>
-          <div class='foot-container'>
-            <row class='foot-row'>
-              <div class='foot-columns'>
-                <a target='_blank' href=''><img
-                    src='../assets/github-mark-white.png'
-                    alt=''
-                  /></a>
-              </div>
-              <div class='foot-columns'>
-                <ul>
-                  <li>ivy</li>
-                  <li>katrina</li>
-                  <li>jon</li>
-                  <li>houston</li>
-                </ul>
-              </div>
-            </row>
-          </div>
-        </footer>
       </div>
+      <footer>
+        <div class='foot-container'>
+          <row class='foot-row'>
+            <div class='foot-columns'>
+               <a target='_blank' href=''><img src='images/github-mark-white.png'alt=''/></a> 
+            </div>
+            <div class='foot-columns'>
+              <ul>
+                <li>ivy</li>
+                <li>katrina</li>
+                <li>jon</li>
+                <li>houston</li>
+              </ul>
+            </div>
+          </row>
+        </div>
+      </footer>
     </div>
+
   </div>
-</div>
+  {{! </div> }}
+</body>
 <script src='js/login.js'></script>

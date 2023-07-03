@@ -1,0 +1,24 @@
+@import './colorscheme';
+@import './_mixins';
+
+.dash{
+    section{
+@include dash-boxes
+    }
+    aside{
+@include dash-boxes
+    }
+}
+.wordbig{
+    color: $accent;
+    transition: font-size .5s;
+      &:hover{
+                        font-weight: 800;
+                        font-size: 20px;
+}
+}
+.center{
+    display: flex;
+    justify-content: center;
+
+};

@@ -11,25 +11,34 @@
   <div id='page-container'>
     <div id='content-wrap'>
       <div class='row'>
-        <div class='col-md-8 offset-md-2 col-lg-6 offset-lg-3'>
-          <main class='login dashboard'>
+        <div class='col-md-8 offset-md-2 col-lg-6 offset-lg-3 divide'>
+          <main class='dash dashboard'>
 
-            <h1>This page displays projects</h1>
+            <h1>projects</h1>
 
             <section>
-              <h2>add projects here</h2>
-              <input type='text' />
-              <button class="add-project">add button goes here</button>
+              <input placeholder='add a new project!' type='text' />
+              <button>add!</button>
 
             </section>
             <aside>
-              <a class='dashboard'>this is where a project will be. if you click
-                on it it will take you to your project. this is just an example
-                and does not lead anywhere though</a>
-              <button>this is the delete button. </button>
+              <button class='dashboard'>project 1</button>
+              <button>delete. </button>
 
             </aside>
 
+          </main>
+          <main class='dash'>
+            <section>
+              <input
+                placeholder='search two things to compare them!'
+                type='text'
+              />
+              <button>search!</button>
+            </section>
+            <section>
+              <div>results show here</div>
+            </section>
           </main>
         </div>
         <footer>
@@ -37,7 +46,7 @@
             <row class='foot-row'>
               <div class='foot-columns'>
                 <a target='_blank' href=''><img
-                    src='../assets/github-mark-white.png'
+                    src='images/github-mark-white.png'
                     alt=''
                   /></a>
               </div>
@@ -56,5 +65,4 @@
     </div>
   </div>
 </div>
-{{!-- <script src='js/login.js'></script> --}}
-<script src="js/project.js"></script>
+<script src='js/login.js'></script>

@@ -11,13 +11,22 @@ Project.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-// User.hasMany(Search, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE',
-// });
-// Search.belongsTo(User, {
-//   foreignKey: 'user_id',
-// });
+User.hasMany(Search, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+Search.belongsTo(User, {
+  foreignKey: 'user_id',
+});
+
+Project.hasMany(Search, {
+  foreignKey: 'project_id',
+  onDelete: 'CASCADE',
+});
+
+Search.belongsTo(Project, {
+  foreignKey: 'id',
+});
 
 // User.hasMany(Search, {
 //   foreignKey: 'user_id',

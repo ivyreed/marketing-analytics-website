@@ -10,7 +10,7 @@ class Project extends Model {}
 Project.init(
   // define columns
   {
-    id: {
+    project_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -20,7 +20,7 @@ Project.init(
       type: DataTypes.UUID,
       references: {
         model: 'User',
-        key: 'id',
+        key: 'user_id',
         unique: false,
       },
     },

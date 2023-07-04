@@ -17,7 +17,7 @@ PrevSearch.init(
       type: DataTypes.UUID,
       references: {
         model: 'User',
-        key: 'id',
+        key: 'user_id',
         unique: false,
       },
     },
@@ -25,7 +25,7 @@ PrevSearch.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'Search',
-        key: 'id',
+        key: 'search_id',
         unique: false,
       },
     },

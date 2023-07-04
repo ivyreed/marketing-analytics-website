@@ -25,7 +25,7 @@ Project.hasMany(Search, {
 });
 
 Search.belongsTo(Project, {
-  foreignKey: 'id',
+  foreignKey: 'project_id',
 });
 
 // User.hasMany(Search, {

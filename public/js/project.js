@@ -17,18 +17,22 @@ const checkforProjects = async event => {
 const createNewProject = async event => {
   event.preventDefault();
 
-  const response = await fetch('/api/dashboard', {
-    method: 'POST',
-    body: JSON.stringify({ name }),
-    headers: { 'Content-Type': 'application/json' },
-  });
-  if (response.ok) {
-    console.log(response);
-    document.location.render('/dashboard');
-  } else {
-    const { message } = await response.json();
-    // eslint-disable-next-line no-undef
-    showAlert({ target: 'project-alert', message, type: 'danger' });
+  const name = document.querySelector('#project-name').value.trim();
+
+  if (name) {
+    const response = await fetch(`/api/projects`, {
+      method: 'POST',
+      body: JSON.stringify({ name }),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (response.ok) {
+      document.location.replace('/dashboard');
+    } else {
+      alert('Failed to create project');
+    }
   }
 };
 
@@ -37,5 +41,5 @@ window.onload = () => {
 };
 
 document
-  .querySelector('.add-project')
+  .querySelector('#add-project')
   .addEventListener('submit', createNewProject);

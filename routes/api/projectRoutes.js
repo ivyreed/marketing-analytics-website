@@ -5,11 +5,11 @@ const withAuth = require('../../middleware/isAuthenticated');
 // get all Projects from User
 router.get('/', async (req, res) => {
   try {
-    const projectsData = await Project.findAll({
+    const projectData = await Project.findAll({
       include: [{ model: User, attributes: ['name'] }],
     });
 
-    const projects = projectsData.map(project => project.get({ plain: true }));
+    const projects = projectData.map(project => project.get({ plain: true }));
 
     res.render('dashboard', {
       projects,

@@ -21,6 +21,14 @@ Search.init(
         unique: false,
       },
     },
+    project_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: 'Project',
+        key: 'id',
+        unique: false,
+      },
+    },
     query: {
       type: DataTypes.STRING,
     },

@@ -3,7 +3,7 @@ const { Project, User, Search } = require('../../models');
 const withAuth = require('../../middleware/isAuthenticated');
 
 // GET all searches for a given project under a user
-router.get('/', async (req, res) => {
+router.get('/:serch_id', async (req, res) => {
   try {
     const searchData = await Search.findAll({
       where: {
@@ -23,20 +23,26 @@ router.get('/', async (req, res) => {
 });
 
 // POST new search query after making search
-router.post('/', withAuth, async (req, res) => {
-  try {
-    const searchData = await Search.create({
-      ...req.body,
-      use_id: req.session.user_id,
-    });
+router.post(
+  '/flarg',
+  /*withAuth,*/ async (req, res) => {
+    try {
+      // console.log('hi felicia');
+      // const searchData = await Search.create({
+      //   ...req.body,
+      //   use_id: req.session.user_id,
+      // });
 
-    const searches = searchData.map(search => search.get({ plain: true }));
+      // const searches = searchData.map(search => search.get({ plain: true }));
 
-    res.render('dashboard', {
-      searches,
-      logged_in: req.sesion.logged_in,
-    });
-  } catch (err) {
-    res.status(400).json(err);
+      // res.render('dashboard', {
+      //   searches,
+      //   logged_in: req.sesion.logged_in,
+      // });
+    } catch (err) {
+      res.status(400).json(err);
+    }
   }
-});
+);
+
+module.exports = router;

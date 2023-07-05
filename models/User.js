@@ -11,7 +11,7 @@ class User extends Model {
 
 User.init(
   {
-    id: {
+    user_id: {
       type: DataTypes.UUID,
       defaultValue: UUIDV4,
       allowNull: false,

@@ -1,4 +1,4 @@
-# marketing-analytics-website
+# Marketing Analytics Application
 
 ## Description
 
@@ -18,6 +18,6 @@ This tool will make the typically tedious task of marketing a new product a bree
 
 ![image](https://www.vectorlogo.zone/logos/handlebarsjs/handlebarsjs-ar21.svg)![image](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
-## Link
+## Deployed Heroku Link
 
 <https://market-assistant-6b0f6ad27e3c.herokuapp.com/>

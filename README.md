@@ -34,7 +34,21 @@ This tool will make the typically tedious task of marketing a new product a bree
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Home Page
+
+![image](../marketing-analytics-website/public/images/homepagescreenshot.png)
+
+Signup Page
+
+![image](../marketing-analytics-website/public/images/signupscreenshot.png)
+
+Login Page
+
+![image](../marketing-analytics-website/public/images/loginscreenshot.png)
+
+Project Page
+
+![image](../marketing-analytics-website/public/images/projectpagescreenshot.png)
 
 ## Demo
 
@@ -42,7 +56,7 @@ Insert gif or link to demo
 
 ## Deployed Heroku Link
 
-<https://market-assistant-6b0f6ad27e3c.herokuapp.com/>
+This site was deployed using [Heroku](https://market-assistant-6b0f6ad27e3c.herokuapp.com/).
 
 ## Authors
 

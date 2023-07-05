@@ -29,6 +29,7 @@ module.exports = {
       body: { user_id, query },
     } = req;
     try {
+      console.log(query);
       const search = await Search.create({
         user_id: `${req.session.user_id}`,
         query,

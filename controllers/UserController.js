@@ -40,7 +40,7 @@ module.exports = {
         where: { email },
         attributes: { exclude: ['createdAt, updatedAt'] },
       });
-      console.log(user);
+
       if (!user) {
         res.status(400).json({
           message: 'Incorrect email or password. Please try again!',
@@ -62,7 +62,7 @@ module.exports = {
       req.session.save(() => {
         req.session.isAuthenticated = true;
         req.session.currentUser = user;
-        req.session.user_id = user.user_id;
+        req.session.user_id = user.id;
 
         res.status(200).json({
           user,

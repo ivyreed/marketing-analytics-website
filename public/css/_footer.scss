@@ -3,7 +3,7 @@
 
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     // height: ;
     background-color: $primary;
@@ -12,11 +12,12 @@ footer{
         display: absolute;
         .foot-row{
             background-color: $primary;
-            @include flexcenter(space-between,row);
+            @include flexcenter(space-around,column);
             .foot-columns{
                 flex: wrap;
-                padding-left: 40px;
-                padding-right: 40px;
+                
+                // padding-left: 40px;
+                // padding-right: 40px;
                 img{
                     // scale:.2;
                     height: 50px;

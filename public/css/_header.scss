@@ -14,7 +14,7 @@ header {
     height: 100%;
     margin: 0 auto;
     // background-color: aliceblue;
-    // @include flexcenter(space-between, row)
+    // @include flexcenter(space-between, column)
     div {
       height: 100%;
       display: table;
@@ -34,6 +34,8 @@ header {
     ul {
       float: right;
       height: 100%;
+      z-index: 998;
+      @include flexcenter(space-around,row);
       li {
         height: 100%;
         display: table;

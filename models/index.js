@@ -3,13 +3,13 @@ const Search = require('./Search');
 const PrevSearch = require('./PrevSearch');
 const Project = require('./Project');
 
-// User.hasMany(Project, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE'
-// });
-// Project.belongsTo(User, {
-//   foreignKey: 'user_id',
-// });
+User.hasMany(Project, {
+  foreignKey: 'user_id',
+  onDelete: 'CASCADE',
+});
+Project.belongsTo(User, {
+  foreignKey: 'user_id',
+});
 
 User.hasMany(Search, {
   foreignKey: 'user_id',
@@ -19,14 +19,14 @@ Search.belongsTo(User, {
   foreignKey: 'user_id',
 });
 
-// Project.hasMany(Search, {
-//   foreignKey: 'project_id',
-//   onDelete: 'CASCADE',
-// });
+Project.hasMany(Search, {
+  foreignKey: 'project_id',
+  onDelete: 'CASCADE',
+});
 
-// Search.belongsTo(Project, {
-//   foreignKey: 'project_id',
-// });
+Search.belongsTo(Project, {
+  foreignKey: 'id',
+});
 
 // this is temporary -ivy
 

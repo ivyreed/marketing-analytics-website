@@ -1,0 +1,14 @@
+@import './colorscheme';
+
+@media (max-width: 1000px) {
+header{
+    height: 200px;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 501;
+}
+.login{
+    padding-top: 100px;
+}
+
+}

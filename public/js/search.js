@@ -27,6 +27,19 @@
 //     loop(result);
 //   });
 
+
+
+
+async function displaySearchTerm() {
+const response =fetch('api/search',{
+  method: 'GET',
+  body:json.parse({
+    query: `${req.session.query}`
+  }),
+}
+},
+
+
 async function saveSearchTerm() {
   const searchText = document.querySelector('#searchText').value.trim();
 

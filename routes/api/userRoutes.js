@@ -6,7 +6,7 @@ router.post('/', async (req, res) => {
     const userData = await User.create(req.body);
 
     req.session.save(() => {
-      req.session.user_id = userData.user_id;
+      req.session.user_id = userData.id;
       req.session.logged_in = true;
 
       res.status(200).json(userData);
@@ -15,8 +15,6 @@ router.post('/', async (req, res) => {
     res.status(400).json(err);
   }
 });
-
-console.log('i exist');
 
 router.post('/login', async (req, res) => {
   try {
@@ -39,7 +37,7 @@ router.post('/login', async (req, res) => {
     }
 
     req.session.save(() => {
-      req.session.user_id = userData.user_id;
+      req.session.user_id = userData.id;
       req.session.logged_in = true;
       // req.session.first = userData.firstName;
       // res.json({user: userData, message:`hi ${req.session.first}`})

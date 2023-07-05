@@ -1,4 +1,4 @@
-const { Search } = require('../models');
+const { Search, User } = require('../models');
 module.exports = {
   getSearch: async (req, res) => {
     console.log(`${req.session.user_id}`);
@@ -8,8 +8,14 @@ module.exports = {
         where: {
           user_id: `${req.session.user_id}`,
         },
+        include: [
+          {
+            model: User,
+            require: false,
+          },
+        ],
       });
-
+      req.session.query = search.query;
       res.status(200).json(search);
     } catch (err) {
       res.status(400).json(err);

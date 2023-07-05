@@ -7,7 +7,7 @@ class Search extends Model {}
 Search.init(
   // define columns
   {
-    search_id: {
+    id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
@@ -17,7 +17,7 @@ Search.init(
       type: DataTypes.UUID,
       references: {
         model: 'User',
-        key: 'user_id',
+        key: 'id',
         unique: false,
       },
     },
@@ -25,7 +25,7 @@ Search.init(
       type: DataTypes.INTEGER,
       references: {
         model: 'Project',
-        key: 'project_id',
+        key: 'id',
         unique: false,
       },
     },

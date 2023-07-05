@@ -12,9 +12,10 @@ footer{
         display: absolute;
         .foot-row{
             background-color: $primary;
-            @include flexcenter(space-between,row);
+            @include flexcenter(space-around,column);
             .foot-columns{
                 flex: wrap;
+                
                 padding-left: 40px;
                 padding-right: 40px;
                 img{

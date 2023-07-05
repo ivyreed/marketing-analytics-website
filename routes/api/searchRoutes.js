@@ -3,7 +3,7 @@ const { Project, User, Search } = require('../../models');
 const withAuth = require('../../middleware/isAuthenticated');
 
 // GET all searches for a given project under a user
-router.get('/:serch_id', async (req, res) => {
+router.get('/search_id', async (req, res) => {
   try {
     const searchData = await Search.findAll({
       where: {

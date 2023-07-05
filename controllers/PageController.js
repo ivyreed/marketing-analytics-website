@@ -1,5 +1,6 @@
 const { Project } = require('../models');
 const { Search } = require('../models');
+const { User } = require('../models');
 
 module.exports = {
   getDashboard: async (req, res) => {

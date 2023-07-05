@@ -1,4 +1,5 @@
 const { Project } = require('../models');
+const { Search } = require('../models');
 
 module.exports = {
   getDashboard: (req, res) => {
@@ -33,6 +34,36 @@ module.exports = {
       });
 
       res.status(200).json(project);
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  },
+
+  getSearch: async (req, res) => {
+    const {
+      body: { search_id, query },
+    } = req;
+    try {
+      const search = await Search.findAll({
+        where: { search_id, query },
+      });
+
+      res.status(200).json(search);
+    } catch (err) {
+      res.status(400).json(err);
+    }
+  },
+
+  newSearch: async (req, res) => {
+    const {
+      body: { search_id, query },
+    } = req;
+    try {
+      const search = await Search.create({
+        where: { search_id, query },
+      });
+
+      res.status(200).json(search);
     } catch (err) {
       res.status(400).json(err);
     }

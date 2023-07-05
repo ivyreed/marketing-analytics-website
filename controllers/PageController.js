@@ -2,8 +2,15 @@ const { Project } = require('../models');
 const { Search } = require('../models');
 
 module.exports = {
-  getDashboard: (req, res) => {
+  getDashboard: async (req, res) => {
+    const user = await User.findOne({
+      where: {
+        id: req.session.user_id,
+        // include model project
+      },
+    });
     res.render('dashboard', {
+      user: user,
       welcomeMessage: `Welcome to the dashboard ${req.session.currentUser.firstName}!`,
       isAuthenticated: req.session.isAuthenticated,
     });

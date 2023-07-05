@@ -19,13 +19,13 @@ module.exports = {
       req.session.save(() => {
         req.session.isAuthenticated = true;
         req.session.currentUser = user;
-        req.session.user_id = user.user_id;
+        //req.session.user_id = user.user_id;
         res.status(200).json(user);
       });
     } catch (err) {
       console.error(err);
       res.status(500).json(err);
-      console.log('pleae use a real email and make sure you use a strong');
+      console.log('please use a real email and make sure you use a strong');
     }
   },
 

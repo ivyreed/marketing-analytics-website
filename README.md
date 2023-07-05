@@ -10,8 +10,6 @@ This tool will make the typically tedious task of marketing a new product a bree
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-
-
 ## Link
 
-https://market-assistant-6b0f6ad27e3c.herokuapp.com/
+<https://market-assistant-6b0f6ad27e3c.herokuapp.com/>

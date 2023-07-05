@@ -3,7 +3,7 @@
 
 footer{
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     // height: ;
     background-color: $primary;
@@ -16,8 +16,8 @@ footer{
             .foot-columns{
                 flex: wrap;
                 
-                padding-left: 40px;
-                padding-right: 40px;
+                // padding-left: 40px;
+                // padding-right: 40px;
                 img{
                     // scale:.2;
                     height: 50px;

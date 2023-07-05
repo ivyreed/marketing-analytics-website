@@ -1,3 +1,11 @@
+html {
+  background: rgb(139, 139, 226);
+}
+
+html {
+  background: rgb(139, 139, 226);
+}
+
 header {
   background: rgb(139, 139, 226);
   width: 100%;
@@ -30,6 +38,10 @@ header section ul {
   float: right;
   height: 100%;
   z-index: 998;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 header section ul li {
   height: 100%;
@@ -46,9 +58,17 @@ header section ul li a:hover {
   font-weight: 800;
 }
 
+html {
+  background: rgb(139, 139, 226);
+}
+
+html {
+  background: rgb(139, 139, 226);
+}
+
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
   background-color: rgb(139, 139, 226);
 }
@@ -65,8 +85,6 @@ footer .foot-container .foot-row {
 }
 footer .foot-container .foot-row .foot-columns {
   flex: wrap;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 footer .foot-container .foot-row .foot-columns img {
   height: 50px;
@@ -87,6 +105,14 @@ footer .foot-container .foot-row .foot-columns ul li {
 footer .foot-container .foot-row .foot-columns ul li:hover {
   font-weight: 800;
   font-size: 20px;
+}
+
+html {
+  background: rgb(139, 139, 226);
+}
+
+html {
+  background: rgb(139, 139, 226);
 }
 
 .homeContainer {
@@ -219,6 +245,14 @@ footer .foot-container .foot-row .foot-columns ul li:hover {
   transition: -webkit-clip-path 500ms;
   transition: clip-path 500ms;
   transition: clip-path 500ms, -webkit-clip-path 500ms;
+}
+
+html {
+  background: rgb(139, 139, 226);
+}
+
+html {
+  background: rgb(139, 139, 226);
 }
 
 .login section {
@@ -358,6 +392,14 @@ footer .foot-container .foot-row .foot-columns ul li:hover {
 .center {
   display: flex;
   justify-content: center;
+}
+
+html {
+  background: rgb(139, 139, 226);
+}
+
+html {
+  background: rgb(139, 139, 226);
 }
 
 .dash section {
@@ -610,12 +652,19 @@ input:checked + .slide-container .nav label {
   display: block;
 }
 
+html {
+  background: rgb(139, 139, 226);
+}
+
 @media (max-width: 1000px) {
   header {
     height: 200px;
     width: 100vw;
     overflow: hidden;
     z-index: 501;
+  }
+  .login {
+    padding-top: 100px;
   }
 }
 * {

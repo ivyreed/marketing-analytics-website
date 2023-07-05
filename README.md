@@ -9,6 +9,7 @@
   - [Technologies Used](#technologies-used)
   - [Screenshots](#screenshots)
   - [Demo](#demo)
+  - [Run Locally](#run-locally)
   - [Deployed Heroku Link](#deployed-heroku-link)
   - [Authors](#authors)
 
@@ -53,6 +54,32 @@ Project Page
 ## Demo
 
 Insert gif or link to demo
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone (https://github.com/ivyreed/marketing-analytics-website.git)
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm run start
+```
 
 ## Deployed Heroku Link
 

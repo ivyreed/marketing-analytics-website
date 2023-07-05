@@ -19,6 +19,7 @@ module.exports = {
       req.session.save(() => {
         req.session.isAuthenticated = true;
         req.session.currentUser = user;
+        req.session.user_id = user.user_id;
         res.status(200).json(user);
       });
     } catch (err) {
@@ -37,7 +38,7 @@ module.exports = {
         where: { email },
         attributes: { exclude: ['createdAt, updatedAt'] },
       });
-
+      console.log(user);
       if (!user) {
         res.status(400).json({
           message: 'Incorrect email or password. Please try again!',
@@ -59,6 +60,7 @@ module.exports = {
       req.session.save(() => {
         req.session.isAuthenticated = true;
         req.session.currentUser = user;
+        req.session.user_id = user.user_id;
         res.status(200).json({
           user,
           message: 'You are now logged in!',

@@ -27,7 +27,7 @@ router.post(
   '/flarg',
   /*withAuth,*/ async (req, res) => {
     try {
-      console.log('hi felicia');
+      // console.log('hi felicia');
       // const searchData = await Search.create({
       //   ...req.body,
       //   use_id: req.session.user_id,

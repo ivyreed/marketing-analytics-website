@@ -1,11 +1,12 @@
 const { Search } = require('../models');
 module.exports = {
   getSearch: async (req, res) => {
+    console.log(`${req.session.user_id}`);
     try {
       const search = await Search.findAll({
         attributes: ['query'],
         where: {
-          user_id: '2391af41-98d6-43a5-a9a7-79577e142445',
+          user_id: `${req.session.user_id}`,
         },
       });
 
@@ -14,14 +15,16 @@ module.exports = {
       res.status(400).json(err);
     }
   },
+  //   user_id: '2391af41-98d6-43a5-a9a7-79577e142445',
 
   newSearch: async (req, res) => {
+    console.log(`${req.session.user_id}`);
     const {
       body: { user_id, query },
     } = req;
     try {
       const search = await Search.create({
-        user_id,
+        user_id: `${req.session.user_id}`,
         query,
       });
 

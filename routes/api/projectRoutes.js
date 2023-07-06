@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
 });
 
 // get a single Project after clicking on front end
-router.get('/:id', async (req, res) => {
+router.get('/:project_id', async (req, res) => {
   try {
     const projectData = await Project.findByPk(req.params.id, {
       include: [{ model: User, attributes: ['name'] }],
@@ -51,7 +51,7 @@ router.post('/', withAuth, async (req, res) => {
   }
 });
 
-router.delete('/:id', withAuth, async (req, res) => {
+router.delete('/:project_id', withAuth, async (req, res) => {
   try {
     const projectData = await Project.destroy({
       where: {
@@ -61,7 +61,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!projectData) {
-      res.status(404).json({ message: `No project found with this id!` });
+      res.status(404).json({ message: 'No project found with this id!' });
       return;
     }
 

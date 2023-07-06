@@ -51,7 +51,7 @@
                   </div>
                   <div class='col-md-4'>
                     <button
-                      class='btn btn-sm btn-danger'
+                      class='btn btn-sm btn-danger delete-project'
                       data-id='{{project.id}}'
                     >DELETE</button>
                   </div>
@@ -70,7 +70,11 @@
               <button id='searchBtn'>search!</button>
             </section>
             <section>
-              <div>results show here</div>
+              {{#each user.Searches as |search|}}
+              <div class='row mb-2'>
+                <h4><a href="/search/{{search.id}}"></a></h4>
+              </div>
+              {{/each}}
             </section>
           </main>
         </div>

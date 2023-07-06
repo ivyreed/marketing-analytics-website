@@ -27,16 +27,7 @@ router.post(
   '/flarg',
   /*withAuth,*/ async (req, res) => {
     try {
-      // console.log('hi felicia');
-      // const searchData = await Search.create({
-      //   ...req.body,
-      //   use_id: req.session.user_id,
-      // });
-      // const searches = searchData.map(search => search.get({ plain: true }));
-      // res.render('dashboard', {
-      //   searches,
-      //   logged_in: req.sesion.logged_in,
-      // });
+
     } catch (err) {
       res.status(400).json(err);
     }

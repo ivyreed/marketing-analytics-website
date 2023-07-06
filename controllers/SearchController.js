@@ -21,7 +21,6 @@ module.exports = {
       res.status(400).json(err);
     }
   },
-  //   user_id: '2391af41-98d6-43a5-a9a7-79577e142445',
 
   newSearch: async (req, res) => {
     console.log(`${req.session.user_id}`);

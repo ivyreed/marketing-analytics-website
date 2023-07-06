@@ -28,26 +28,6 @@ Search.belongsTo(Project, {
   foreignKey: 'project_id',
 });
 
-// this is temporary -ivy
-
-// User.hasMany(Search, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE',
-// });
-// Search.belongsToMany(User, {
-//   through: PrevSearch,
-//   foreignKey: 'user_id',
-// });
-
-// Search.hasMany(User, {
-//   foreignKey: 'user_id',
-//   onDelete: 'CASCADE',
-// });
-// User.belongsToMany(Search, {
-//   through: PrevSearch,
-//   foreignKey: 'user_id',
-// });
-
 module.exports = {
   User,
   Search,

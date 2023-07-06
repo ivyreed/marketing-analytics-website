@@ -93,4 +93,5 @@ This site was deployed using [Heroku](https://market-assistant-6b0f6ad27e3c.hero
 - [@ivyreed](https://www.github.com/ivyreed)
 - [@katgucilatar](https://www.github.com/katgucilatar)
 - [@hculp](https://www.github.com/hculp)
-  
+
+[🔼 Back to Top](#marketing-assistant)

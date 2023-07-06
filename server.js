@@ -14,7 +14,12 @@ const hbs = exphbs.create();
 
 const sessionConfig = {
   secret: process.env.SESSION_SECRET,
-  cookie: {},
+  cookie: {
+    maxAge: 3000000,
+    httpOnly: true,
+    secure: false,
+    sameSite: 'strict',
+  },
   resave: false,
   saveUninitialized: true,
   store: new SequelizeStore({
@@ -33,7 +38,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-const force = process.env.FORCE_SYNC === 'true';
+// const force = process.env.FORCE_SYNC === 'true';
 
 sequelize.sync({ force: false }).then(() => {
   app.listen(PORT, () => {

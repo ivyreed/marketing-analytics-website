@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { PageController } = require('../../controllers');
+const { PageController } = require('../../controllers/');
 
 const isAuthenticated = require('../../middleware/isAuthenticated');
 

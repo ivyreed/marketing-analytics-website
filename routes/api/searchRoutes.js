@@ -32,9 +32,7 @@ router.post(
       //   ...req.body,
       //   use_id: req.session.user_id,
       // });
-
       // const searches = searchData.map(search => search.get({ plain: true }));
-
       // res.render('dashboard', {
       //   searches,
       //   logged_in: req.sesion.logged_in,

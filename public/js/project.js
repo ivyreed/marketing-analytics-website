@@ -8,7 +8,7 @@ const checkforProjects = async event => {
 
   if (response.ok) {
     console.log(response);
-    document.location.render(response);
+    document.location.reload();
   } else {
     console.log('No current projects');
   }
@@ -20,14 +20,14 @@ const createNewProject = async event => {
   const name = document.querySelector('#project-name').value.trim();
 
   if (name) {
-    const response = await fetch(`/api/projects`, {
+    const response = await fetch(`/api/dashboard`, {
       method: 'POST',
       body: JSON.stringify({ name }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
-
+    console.log(response);
     if (response.ok) {
       document.location.replace('/dashboard');
     } else {
@@ -41,5 +41,5 @@ window.onload = () => {
 };
 
 document
-  .querySelector('#add-project')
+  .querySelector('.new-project-form')
   .addEventListener('submit', createNewProject);

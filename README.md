@@ -1,9 +1,9 @@
-# Marketing Assistant
+# Marketing Bestie
 
 <details>
     <summary><h2>Table of Contents</h2></summary>
 
-- [Marketing Assistant](#marketing-assistant)
+- [Marketing Bestie](#marketing-bestie)
   - [Description](#description)
   - [License](#license)
   - [Technologies Used](#technologies-used)
@@ -12,16 +12,17 @@
     - [Signup Page](#signup-page)
     - [Login Page](#login-page)
     - [Project Page](#project-page)
-  - [Demo](#demo)
   - [Run Locally](#run-locally)
   - [Deployed Heroku Link](#deployed-heroku-link)
-  - [Authors](#authors)
+  - [Acknowledgements](#acknowledgements)
+  - [Contributors](#contributors)
 
 </details>
 
 ## Description
 
-Every good marketing specialist knows that understanding trends is critical for a brand to stay fresh and competitive. With our marketing assistant......
+Have you ever had good ideas and gained the motive to profit off of it? Just for that same good idea to flunk out and not reach any kind of clientele or attention. Or maybe you’re a business owner having a crisis because your business is failing.  Look no more!
+We’re here to help you with your own personal Marketing Bestie. Maybe your good idea wasn’t so bad after all and maybe your business isn’t failing due to a lack of work ethic, maybe it’s just the lack of relevancy in terms of advertising! By using our Marketing Bestie app, you can now track your projects and use our search query to search keywords which will then show the keywords’ analytics and trends. We’re here to start and/or save your business!!
 
 ## License
 
@@ -50,10 +51,6 @@ Every good marketing specialist knows that understanding trends is critical for 
 ### Project Page
 
 ![image](./public/images/projectpagescreenshot.png)
-
-## Demo
-
-Insert gif or link to demo
 
 ## Run Locally
 
@@ -85,7 +82,15 @@ Start the server
 
 This site was deployed using [Heroku](https://market-assistant-6b0f6ad27e3c.herokuapp.com/).
 
-## Authors
+## Acknowledgements
+
+We would like to extend our thanks and appreciation to our bootcamp instructor and TA's for their
+assistance throughout the project. Without your expertise we would not have made it through this project.
+A extra big shout out to our instructor for the usage of his public template on GitHub.
+We also want to thank <www.spiceworks.com>, <www.succesivecloud.com>, <www.towardsdatascience.com> and <www.codepen.com> for
+such great images and display options. 👏
+
+## Contributors
 
 - [@jonjons06](https://www.github.com/jonjons06)
 - [@ivyreed](https://www.github.com/ivyreed)

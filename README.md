@@ -21,9 +21,7 @@
 
 ## Description
 
-With this application you can search for trending topics using keywords to assist with marketing a product.
-With the assistance of the SerpApi the user will be presented with a graph displaying trending interests over a period of time.
-This tool will make the typically tedious task of marketing a new product a breeze 🌬️.
+Every good marketing specialist knows that understanding trends is critical for a brand to stay fresh and competitive. With our marketing assistant......
 
 ## License
 

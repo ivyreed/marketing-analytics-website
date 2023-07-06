@@ -8,6 +8,10 @@
   - [License](#license)
   - [Technologies Used](#technologies-used)
   - [Screenshots](#screenshots)
+    - [Home Page](#home-page)
+    - [Signup Page](#signup-page)
+    - [Login Page](#login-page)
+    - [Project Page](#project-page)
   - [Demo](#demo)
   - [Run Locally](#run-locally)
   - [Deployed Heroku Link](#deployed-heroku-link)
@@ -33,19 +37,19 @@ This tool will make the typically tedious task of marketing a new product a bree
 
 ## Screenshots
 
-Home Page
+### Home Page
 
 ![image](./public/images/homepagescreenshot.png)
 
-Signup Page
+### Signup Page
 
 ![image](./public/images/signupscreenshot.png)
 
-Login Page
+### Login Page
 
 ![image](./public/images/loginscreenshot.png)
 
-Project Page
+### Project Page
 
 ![image](./public/images/projectpagescreenshot.png)
 

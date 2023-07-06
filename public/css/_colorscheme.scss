@@ -1,10 +1,15 @@
 $primary: rgb(139, 139, 226);
 $secondary: rgb(10,10,10);
-// $accent: linear-gradient(blue,red);
 
 $accent:rgb(139, 139, 226);
 $textcolor1:rgb(10, 10, 10);
 $textcolor2:rgb(10, 10, 10);
+
+
+@mixin background{
+        background-image: linear-gradient(white, $primary, $primary);
+
+}
 
 html{
     background: $primary;

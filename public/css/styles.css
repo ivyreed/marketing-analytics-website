@@ -97,12 +97,13 @@ footer .foot-container .foot-row .foot-columns img:hover {
 footer .foot-container .foot-row .foot-columns ul {
   display: flex;
 }
-footer .foot-container .foot-row .foot-columns ul li {
+footer .foot-container .foot-row .foot-columns ul li a {
+  text-decoration: none;
   padding: 10px;
   color: rgb(10, 10, 10);
   transition: font-size 0.5s;
 }
-footer .foot-container .foot-row .foot-columns ul li:hover {
+footer .foot-container .foot-row .foot-columns ul li a:hover {
   font-weight: 800;
   font-size: 20px;
 }
@@ -402,6 +403,30 @@ html {
   background: rgb(139, 139, 226);
 }
 
+.dashstyle {
+  background-image: linear-gradient(white, rgb(139, 139, 226), rgb(139, 139, 226));
+}
+
+.dashmiddle {
+  background: rgb(248, 247, 248);
+  box-shadow: 10px 10px 5px rgb(116, 116, 190);
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.projwords {
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(139, 139, 226);
+}
+
+.dashgroup {
+  display: flex;
+  justify-content: space-aroun;
+  align-items: center;
+  flex-direction: column;
+}
+
 .dash section {
   display: flex;
   justify-content: center;
@@ -663,16 +688,29 @@ html {
     overflow: hidden;
     z-index: 501;
   }
+  .dashgroup h1 {
+    padding-top: 160px;
+  }
   .login {
     padding-top: 100px;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  text-decoration: none;
-  font-family: "montserrat";
+@media (min-width: 1000px) {
+  .projectcreate {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .projectcreate div label {
+    color: black;
+  }
+  .projectcreate div input {
+    font-size: 30px;
+    padding-top: 5px;
+  }
+}
+html {
+  background: rgb(139, 139, 226);
 }
 
 main {
@@ -728,21 +766,15 @@ main {
   height: 80px;
 }
 
-.divide {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-}
-
-.tree {
-  background-image: url(../images/download.png);
-  scale: 1.1;
-  height: 100vh;
-  position: absolute;
-}
-
 .clear {
   opacity: 90%;
   height: 600px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "montserrat";
 }/*# sourceMappingURL=styles.css.map */

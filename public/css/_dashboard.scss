@@ -1,24 +1,40 @@
 @import './colorscheme';
 @import './_mixins';
 
-.dash{
-    section{
-@include dash-boxes
-    }
-    aside{
-@include dash-boxes
-    }
+.dashstyle {
+  @include background;
 }
-.wordbig{
-    color: $accent;
-    transition: font-size .5s;
-      &:hover{
-                        font-weight: 800;
-                        font-size: 20px;
+.dashmiddle {
+  background: rgb(248, 247, 248);
+  box-shadow: 10px 10px 5px rgb(116, 116, 190);
+  border-radius: 2rem;
+  padding: 2rem;
 }
+.projwords{
+    text-decoration: none;
+    font-weight: 800;
+    color:$accent;
 }
-.center{
-    display: flex;
-    justify-content: center;
-
-};
+.dashgroup {
+  @include flexcenter(space-aroun, column);
+}
+.dash {
+  section {
+    @include dash-boxes;
+  }
+  aside {
+    @include dash-boxes;
+  }
+}
+.wordbig {
+  color: $accent;
+  transition: font-size 0.5s;
+  &:hover {
+    font-weight: 800;
+    font-size: 20px;
+  }
+}
+.center {
+  display: flex;
+  justify-content: center;
+}

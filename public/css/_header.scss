@@ -8,13 +8,10 @@ header {
   display: block;
   color: $textcolor1;
   border-bottom: 1px solid black;
-  // @include flexcenter(center, row);
   section {
     width: 80%;
     height: 100%;
     margin: 0 auto;
-    // background-color: aliceblue;
-    // @include flexcenter(space-between, column)
     div {
       height: 100%;
       display: table;
@@ -25,7 +22,6 @@ header {
         vertical-align: middle;
         font-family: 'montserrat';
         font-size: 32px;
-
         span {
           font-weight: 300;
         }
@@ -53,11 +49,5 @@ header {
       }
     }
   }
-  // button{
-  //     @include flexcenter(center, row);
-  //     background-color: $secondary;
-  //     &:hover{
-  //         display: contents;
 
-  //     }
 }

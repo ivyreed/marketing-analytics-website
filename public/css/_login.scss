@@ -1,26 +1,23 @@
 @import './colorscheme';
 @import './_mixins';
 
-.login{
-    // padding-top: 100px;
-
-    section{
-@include login-boxes
-    }
-    aside{
-@include login-boxes
-    }
+.login {
+  section {
+    @include login-boxes;
+  }
+  aside {
+    @include login-boxes;
+  }
 }
-.wordbig{
-    color: $accent;
-    transition: font-size .5s;
-      &:hover{
-                        font-weight: 800;
-                        font-size: 20px;
+.wordbig {
+  color: $accent;
+  transition: font-size 0.5s;
+  &:hover {
+    font-weight: 800;
+    font-size: 20px;
+  }
 }
+.center {
+  display: flex;
+  justify-content: center;
 }
-.center{
-    display: flex;
-    justify-content: center;
-
-};

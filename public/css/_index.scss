@@ -2,11 +2,9 @@
 @import './_mixins';
 .homeContainer {
     @include flexcenter(center,row);
-    // border: 1px solid black;
 
   aside {
     @include login-boxes();
-    // @include flexcenter(center, column);
   }
   section{
     @include login-boxes();

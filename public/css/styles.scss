@@ -5,77 +5,11 @@
 @import './dashboard';
 @import './carousel';
 @import './media';
-
+@import './misc.';
 * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
   font-family: 'montserrat';
-}
-
-main {
-  color: $textcolor2;
-}
-
-#page-container {
-  position: relative;
-  min-height: 90vh;
-}
-
-#content-wrap {
-  padding-bottom: 2.5rem;
-}
-
-.dashboard {
-  color: $accent;
-}
-
-.a {
-    background-image: linear-gradient(white, $primary, $primary);
-  height: 600px;
-}
-.b {
-  background-color: rgb(93, 93, 217);
-  // background-image: linear-gradient(blue,red,red);
-  height: 600px;
-  // opacity: 50%;
-
-}
-.c {
-  background-color: rgb(70,70,226);
-  // background-image: linear-gradient(red,pink,pink);
-  height: 600px;
-}
-.d {
-  background-image: linear-gradient(white, $primary, $primary);
-  height: 100vh;
-}
-.e {
-  font-weight: 800;
-  
-}
-.stay {
-  position: fixed;
-  z-index: 5;
-  width:100vw;
-  padding-top: 0;
-
-  margin-top: 0;
-}
-.spacer{
-  height: 80px;
-}
-.divide{
-  @include flexcenter(space-between,row);
-}
-.tree{
-  background-image: url(../images/download.png);
-  scale: 1.1;
-  height: 100vh;
-  position: absolute;
-}
-.clear{
-  opacity: 90%;
-  height: 600px;
 }

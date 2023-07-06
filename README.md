@@ -8,6 +8,10 @@
   - [License](#license)
   - [Technologies Used](#technologies-used)
   - [Screenshots](#screenshots)
+    - [Home Page](#home-page)
+    - [Signup Page](#signup-page)
+    - [Login Page](#login-page)
+    - [Project Page](#project-page)
   - [Demo](#demo)
   - [Run Locally](#run-locally)
   - [Deployed Heroku Link](#deployed-heroku-link)
@@ -17,9 +21,7 @@
 
 ## Description
 
-With this application you can search for trending topics using keywords to assist with marketing a product.
-With the assistance of the SerpApi the user will be presented with a graph displaying trending interests over a period of time.
-This tool will make the typically tedious task of marketing a new product a breeze 🌬️.
+Every good marketing specialist knows that understanding trends is critical for a brand to stay fresh and competitive. With our marketing assistant......
 
 ## License
 
@@ -33,19 +35,19 @@ This tool will make the typically tedious task of marketing a new product a bree
 
 ## Screenshots
 
-Home Page
+### Home Page
 
 ![image](./public/images/homepagescreenshot.png)
 
-Signup Page
+### Signup Page
 
 ![image](./public/images/signupscreenshot.png)
 
-Login Page
+### Login Page
 
 ![image](./public/images/loginscreenshot.png)
 
-Project Page
+### Project Page
 
 ![image](./public/images/projectpagescreenshot.png)
 
@@ -89,4 +91,5 @@ This site was deployed using [Heroku](https://market-assistant-6b0f6ad27e3c.hero
 - [@ivyreed](https://www.github.com/ivyreed)
 - [@katgucilatar](https://www.github.com/katgucilatar)
 - [@hculp](https://www.github.com/hculp)
-  
+
+[🔼 Back to Top](#marketing-assistant)

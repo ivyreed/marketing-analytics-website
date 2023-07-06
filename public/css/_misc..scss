@@ -1,0 +1,54 @@
+@import './colorscheme';
+
+main {
+  color: $textcolor2;
+}
+
+#page-container {
+  position: relative;
+  min-height: 90vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+.dashboard {
+  color: $accent;
+}
+
+.a {
+    background-image: linear-gradient(white, $primary, $primary);
+  height: 600px;
+}
+.b {
+  background-color: rgb(93, 93, 217);
+  height: 600px;
+}
+.c {
+  background-color: rgb(70,70,226);
+  height: 600px;
+}
+.d {
+  background-image: linear-gradient(white, $primary, $primary);
+  height: 100vh;
+}
+.e {
+  font-weight: 800;
+  
+}
+.stay {
+  position: fixed;
+  z-index: 5;
+  width:100vw;
+  padding-top: 0;
+
+  margin-top: 0;
+}
+.spacer{
+  height: 80px;
+}
+.clear{
+  opacity: 90%;
+  height: 600px;
+}

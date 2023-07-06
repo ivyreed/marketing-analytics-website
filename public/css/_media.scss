@@ -1,14 +1,35 @@
 @import './colorscheme';
 
 @media (max-width: 1000px) {
-header{
+  header {
     height: 200px;
     width: 100vw;
     overflow: hidden;
     z-index: 501;
-}
-.login{
+  }
+  .dashgroup {
+    h1 {
+      padding-top: 160px;
+    }
+  }
+  .login {
     padding-top: 100px;
+  }
 }
-
+@media (min-width: 1000px) {
+  .projectcreate {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    // width: 100vw;
+    div {
+      label {
+        color: black;
+      }
+      input {
+        font-size: 30px;
+        padding-top: 5px;
+      }
+    }
+  }
 }

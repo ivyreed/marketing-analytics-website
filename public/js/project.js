@@ -20,7 +20,7 @@ const createNewProject = async event => {
   const name = document.querySelector('#project-name').value.trim();
 
   if (name) {
-    const response = await fetch(`/api/dashboard`, {
+    const response = await fetch(`/api/projects`, {
       method: 'POST',
       body: JSON.stringify({ name }),
       headers: {
@@ -36,6 +36,26 @@ const createNewProject = async event => {
   }
 };
 
+const deleteProject = async event => {
+  event.preventDefault();
+
+  const projectId = event.target.dataset.id;
+  console.log(projectId);
+  if (projectId) {
+    const response = await fetch(`/api/projects/${projectId}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    if (response.ok) {
+      document.location.replace('/dashboard');
+    } else {
+      alert('Failed to delete project');
+    }
+  }
+};
+
 window.onload = () => {
   checkforProjects;
 };
@@ -43,3 +63,8 @@ window.onload = () => {
 document
   .querySelector('.new-project-form')
   .addEventListener('submit', createNewProject);
+
+const projectDeleteButtons = document.querySelectorAll('.project-delete-btn');
+projectDeleteButtons.forEach(button =>
+  button.addEventListener('click', deleteProject)
+);

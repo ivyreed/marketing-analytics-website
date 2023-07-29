@@ -2,6 +2,7 @@ const router = require('express').Router();
 const {
   UserController,
   PageController,
+  ProjectsController,
   SearchController,
 } = require('../../controllers/');
 const searchRouter = require('./searchRoutes');
@@ -13,8 +14,14 @@ router.post('/login', UserController.login);
 router.post('/logout', isAuthenticated, UserController.logout);
 
 // router.use('dashboard', PageController);
-router.post('/dashboard', PageController.newProject);
-router.get('/dashboard', PageController.getProjects);
+router.get('/dashboard', isAuthenticated, PageController.getProjects);
+
+router.post('/projects', isAuthenticated, ProjectsController.newProject);
+router.delete(
+  '/projects/:projectId',
+  isAuthenticated,
+  ProjectsController.deleteProject
+);
 
 router.post('/search', SearchController.newSearch);
 router.get('/search', SearchController.getSearch);

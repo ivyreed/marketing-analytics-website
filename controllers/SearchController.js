@@ -25,7 +25,7 @@ module.exports = {
   newSearch: async (req, res) => {
     console.log(`${req.session.user_id}`);
     const {
-      body: { user_id, query },
+      body: { query },
     } = req;
     try {
       console.log(query);

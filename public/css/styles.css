@@ -118,12 +118,9 @@ footer .contact li a:hover {
   font-size: 1.25rem;
 }
 
-/* .homeContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-} */
+.flex-grow {
+  flex-grow: 1;
+}
 
 .homeContainer aside {
   display: flex;
@@ -728,7 +725,7 @@ html {
   }
 
   .login {
-    padding-top: 100px;
+    padding-top: 50px;
   }
 }
 
@@ -776,7 +773,6 @@ main {
 
 .a {
   background-image: linear-gradient(white, rgb(139, 139, 226), rgb(139, 139, 226));
-  height: 600px;
 }
 
 .b {
@@ -785,12 +781,10 @@ main {
 
 .c {
   background-color: rgb(70, 70, 226);
-  height: 600px;
 }
 
 .d {
   background-image: linear-gradient(white, rgb(139, 139, 226), rgb(139, 139, 226));
-  height: 100vh;
 }
 
 .e {

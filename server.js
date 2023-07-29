@@ -35,7 +35,7 @@ app.use(routes);
 
 const force = process.env.FORCE_SYNC === 'true';
 
-sequelize.sync({ force: false }).then(() => {
+sequelize.sync({ force: force }).then(() => {
   app.listen(PORT, () => {
     console.info(`Server listening on port ${PORT}`);
   });

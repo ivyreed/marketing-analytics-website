@@ -13,7 +13,6 @@ footer{
             background-color: $primary;
             @include flexcenter(space-around,column);
             .foot-columns{
-                flex: wrap;
                 img{
                     height: 50px;
                     padding-top: 5px;

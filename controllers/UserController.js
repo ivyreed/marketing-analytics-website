@@ -7,20 +7,24 @@ module.exports = {
       body: { firstName, lastName, email, password },
     } = req;
     try {
-      const user = await User.create({
+      const dbUser = await User.create({
         firstName,
         lastName,
         email,
         password,
       });
 
+      const user = dbUser.get({ plain: true });
       delete user.password;
+      delete user.createdAt;
+      delete user.updatedAt;
+      const sessionUser = { ...user };
 
       req.session.save(() => {
         req.session.isAuthenticated = true;
-        req.session.currentUser = user;
-        req.session.user_id = user.user_id;
-        res.status(200).json(user);
+        req.session.currentUser = sessionUser;
+        req.session.user_id = user.id;
+        res.status(200).json(dbUser);
       });
     } catch (err) {
       console.error(err);
@@ -36,19 +40,19 @@ module.exports = {
       body: { email, password },
     } = req;
     try {
-      const user = await User.findOne({
+      const dbUser = await User.findOne({
         where: { email },
-        attributes: { exclude: ['createdAt, updatedAt'] },
+        attributes: { exclude: ['createdAt', 'updatedAt'] },
       });
 
-      if (!user) {
+      if (!dbUser) {
         res.status(400).json({
           message: 'Incorrect email or password. Please try again!',
         });
         return;
       }
 
-      const validPassword = await user.checkPassword(password);
+      const validPassword = await dbUser.checkPassword(password);
 
       if (!validPassword) {
         res.status(400).json({
@@ -56,16 +60,17 @@ module.exports = {
         });
         return;
       }
-
+      const user = dbUser.get({ plain: true });
       delete user.password;
+      const sessionUser = { ...user };
 
       req.session.save(() => {
         req.session.isAuthenticated = true;
-        req.session.currentUser = user;
+        req.session.currentUser = sessionUser;
         req.session.user_id = user.id;
 
         res.status(200).json({
-          user,
+          user: dbUser,
           message: 'You are now logged in!',
         });
       });

@@ -24,12 +24,9 @@ module.exports = {
   },
 
   getProjects: async (req, res) => {
-    const {
-      body: { user_id },
-    } = req;
     try {
       const project = await Project.findAll({
-        where: { user_id },
+        where: { id: req.session.currentUser.id },
         include: [
           {
             model: Project,

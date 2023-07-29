@@ -1,98 +1,49 @@
-<head>
-  <link rel='preconnect' href='https://fonts.googleapis.com' />
-  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
-  <link
-    href='https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap'
-    rel='stylesheet'
-  />
-</head>
+<div class="dashstyle flex-grow">
+  <div id='content-wrap' class="dashstyle">
+    <div class=' dashstyle'>
+      <div class='dashstyle col-md-8 offset-md-2 col-lg-6 offset-lg-3 '>
+        <main class='dash dashboard dashgroup'>
 
-<div class='dashstyle'>
-  <div id='page-container' class="dashstyle">
-    <div id='content-wrap' class="dashstyle">
-      <div class=' dashstyle'>
-        <div class='dashstyle col-md-8 offset-md-2 col-lg-6 offset-lg-3 '>
-          <main class='dash dashboard dashgroup'>
+          <h1>Add a new project!</h1>
 
-            <h1>Add a new project!</h1>
+          <section class="">
 
-            <section class="">
+            <form class='form new-project-form projectcreate'>
+              <div class='form-group'>
+                <label for='project-name'>Project Name:</label>
+                <input class='form-input' type='text' id='project-name' name='project-name' />
+              </div>
+              <div class='form-group'>
+                <button type='submit' class='btn btn-primary' id='add-project'>Add!</button>
+              </div>
+            </form>
+          </section>
 
-              <form class='form new-project-form projectcreate'>
-                <div class='form-group'>
-                  <label for='project-name'>Project Name:</label>
-                  <input
-                    class='form-input'
-                    type='text'
-                    id='project-name'
-                    name='project-name'
-                  />
-                </div>
-                <div class='form-group'>
-                  <button
-                    type='submit'
-                    class='btn btn-primary'
-                    id='add-project'
-                  >Add!</button>
-                </div>
-              </form>
-            </section>
+          <div class='col-md-6 project-list dashmiddle'>
+            <h3>My Projects:</h3>
 
-            <div class='col-md-6 project-list dashmiddle'>
-              <h3>My Projects:</h3>
-
-              {{#each user.Projects as |project|}}
-                <div class='row mb-2'>
-                  <div class='col-md-8'>
-                    <h4><a class="projwords"
-                        href='/project/{{project.id}}'
-                      >{{project.name}}</a></h4>
-                  </div>
-                  <div class='col-md-4'>
-                    <button
-                      class='btn btn-sm btn-danger'
-                      data-id='{{project.id}}'
-                    >DELETE</button>
-                  </div>
-                </div>
-              {{/each}}
+            {{#each user.Projects as |project|}}
+            <div class='row mb-2'>
+              <div class='col-md-8'>
+                <h4><a class="projwords" href='/project/{{project.id}}'>{{project.name}}</a></h4>
+              </div>
+              <div class='col-md-4'>
+                <button class='btn btn-sm btn-danger project-delete-btn' data-id='{{project.id}}'>DELETE</button>
+              </div>
             </div>
-
-          </main>
-          <main class='dash'>
-            <section>
-              <input
-                id='searchText'
-                placeholder='only a click away'
-                type='text'
-              />
-              <button id='searchBtn'>search!</button>
-            </section>
-            <section>
-              <div>results show here</div>
-            </section>
-          </main>
-        </div>
-        <footer>
-          <div class='foot-container'>
-            <row class='foot-row'>
-              <div class='foot-columns'>
-                <a target='_blank' href='https://github.com/ivyreed/marketing-analytics-website'><img
-                    src='images/github-mark-white.png'
-                    alt=''
-                  /></a>
-              </div>
-              <div class='foot-columns'>
-                <ul>
-                <li><a href="https://www.github.com/hculp">Houston</a></li>
-                <li><a href="https://www.github.com/ivyreed">Ivy</a></li>
-                <li><a href="https://www.github.com/jonjons06">Jon</a></li>
-                <li><a href="https://www.github.com/katgucilatar">Katrina</a></li>
-                </ul>
-              </div>
-            </row>
+            {{/each}}
           </div>
-        </footer>
+
+        </main>
+        <main class='dash'>
+          <section>
+            <input id='searchText' placeholder='only a click away' type='text' />
+            <button id='searchBtn'>search!</button>
+          </section>
+          <section>
+            <div>results show here</div>
+          </section>
+        </main>
       </div>
     </div>
   </div>
